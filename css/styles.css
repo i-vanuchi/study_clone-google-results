@@ -72,3 +72,41 @@ header {
     text-indent: -9999px;
 }
 
+/* MENUS */
+
+.menu-container {
+    width: 650px;
+    margin-left: 175px;
+    margin-top: 15px;
+}
+
+.menu-primary {
+    display: inline-block;
+}
+.menu-primary ul {
+    display: flex;
+}
+.menu-primary li {
+    margin: 0 3px;
+    padding: 5px 5px 5px 15px;
+}
+
+.more {
+    display: inline-block;
+    margin-left: 15px;
+}
+.more ul {
+    display: none;
+}
+
+.search-options {
+    float: right;
+    display: flex;
+}
+.settings,
+.tools {
+    padding: 5px 10px;
+}
+.settings ul {
+    display: none;
+}
