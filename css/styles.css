@@ -1,0 +1,49 @@
+header {
+    padding: 25px 25px 0 25px;
+}
+
+.logo-google {
+    vertical-align: middle;
+    width: 100px;
+}
+
+.search-container {
+    display: inline-block;
+    position: relative;
+    margin-left: 30px;
+}
+.search-container label {
+    display: none;
+}
+#search-bar {
+    width: 700px;
+    padding: 12px 90px 12px 28px;
+    border: 1px solid rgb(220, 220, 220);
+    border-radius: 20px;
+}
+.clear-icon {
+    right: 70px;
+    background: url(../img/close.png);    
+}
+.search-icon {
+    right: 10px;
+    background: url(../img/search.png);
+    border-left: 1px solid rgb(220, 220, 220)
+}
+.clear-icon,
+.search-icon {
+    position: absolute;
+    text-indent: -9999px;
+    width: 18px;
+    height: 18px;
+    padding: 8px 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-size: 18px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.right-items {
+    float: right;
+}
