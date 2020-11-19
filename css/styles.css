@@ -97,33 +97,60 @@ header {
     display: flex;
 }
 .menu-primary li {
-    margin: 0 3px 13px 0;
+    margin: 0 3px;
 }
+
 .menu-primary a {
-    padding: 10px 10px 10px 27px;
+    display: block;
+    padding: 10px 10px 10px 28px;
     text-decoration: none;
     font-size: 13px;
     color: rgb(120, 120, 120);
+    background-repeat: no-repeat;
+    background-size: 14px;
+    background-position: 6px center;
 }
 .menu-primary a.active {
     color: rgb(0, 134, 223);
     border-bottom: 3px solid rgb(0, 134, 223);
 }
 .menu-primary a[href*="all"] {
-    background: url(../img/all-icon.jpg);
-    background-repeat: no-repeat;
-    background-size: 18px;
-    background-position: left;
+    background-image: url(../img/all-icon.jpg);
+}
+.menu-primary a[href*="images"] {
+    background-image: url(../img/images-icon.jpg);
+}
+.menu-primary a[href*="shopping"] {
+    background-image: url(../img/shopping-icon.jpg);
+}
+.menu-primary a[href*="news"] {
+    background-image: url(../img/news-icon.jpg);
+}
+.menu-primary a[href*="videos"] {
+    background-image: url(../img/videos-icon.jpg);
 }
 
 .more {
     display: inline-block;
-    margin-left: 15px;
+    position: relative;
+    margin-left: 3px;
+    padding: 5px 8px 5px 18px;
     font-size: 13px;
     color: rgb(120, 120, 120);
+    background: url(../img/more-icon.jpg) 6px center / 4px no-repeat;
 }
 .more ul {
     display: none;
+    position: absolute;
+    margin-top: 10px;
+    padding: 3px 0;
+    box-shadow: 0 0 3px rgb(200, 200, 200);
+    background-color: rgb(255, 255, 255);
+}
+.more a {
+    display: block;
+    text-decoration: none;
+    padding: 5px 10px;
 }
 
 .search-options {
@@ -134,8 +161,9 @@ header {
 }
 .settings,
 .tools {
-    padding: 5px 10px;
+    padding: 10px;
 }
 .settings ul {
     display: none;
+    vertical-align: middle;
 }
