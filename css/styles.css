@@ -1,7 +1,7 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
-/* HEADER DA PÁGINA */
+/* Início do Header */
 
 header {
     padding: 25px 25px 0 25px;
@@ -83,7 +83,7 @@ header {
     text-indent: -9999px;
 }
 
-/* MENUS */
+/* Menus */
 
 .menu-container {
     width: 650px;
@@ -138,19 +138,38 @@ header {
     font-size: 13px;
     color: rgb(120, 120, 120);
     background: url(../img/more-icon.jpg) 6px center / 4px no-repeat;
+    cursor: pointer;
 }
 .more ul {
     display: none;
     position: absolute;
     margin-top: 10px;
     padding: 3px 0;
+    left: 0;
     box-shadow: 0 0 3px rgb(200, 200, 200);
+    border-radius: 10px;
     background-color: rgb(255, 255, 255);
 }
 .more a {
     display: block;
+    padding: 10px 15px 10px 35px;
     text-decoration: none;
-    padding: 5px 10px;
+    color: rgb(120, 120, 120);
+}
+.more a[href*="maps"] {
+    background: url(../img/maps-icon.png) 15px center / 14px no-repeat;
+}
+.more a[href*="books"] {
+    background: url(../img/books-icon.png) 15px center / 14px no-repeat;
+}
+.more a[href*="flights"] {
+    background: url(../img/flights-icon.png) 15px center / 14px no-repeat;
+}
+.more a[href*="finance"] {
+    background: url(../img/finance-icon.png) 15px center / 14px no-repeat;
+}
+.more a:hover {
+    background-color: rgb(230, 230, 230);
 }
 
 .search-options {
