@@ -1,3 +1,6 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
 /* HEADER DA PÁGINA */
 
 header {
@@ -23,6 +26,9 @@ header {
     border: 1px solid rgb(220, 220, 220);
     border-radius: 20px;
 }
+#search-bar:hover {
+    box-shadow: 0 0 4px rgb(200, 200, 200);
+}
 .clear-icon {
     right: 70px;
     background: url(../img/close.png);    
@@ -31,6 +37,10 @@ header {
     right: 10px;
     background: url(../img/search.png);
     border-left: 1px solid rgb(220, 220, 220)
+}
+.clear-icon:hover,
+.search-icon:hover {
+    cursor: pointer;
 }
 .clear-icon,
 .search-icon {
@@ -77,9 +87,8 @@ header {
 .menu-container {
     width: 650px;
     margin-left: 175px;
-    margin-top: 15px;
+    margin-top: 20px;
 }
-
 .menu-primary {
     display: inline-block;
 }
@@ -88,12 +97,29 @@ header {
 }
 .menu-primary li {
     margin: 0 3px;
-    padding: 5px 5px 5px 15px;
+}
+.menu-primary a {
+    padding: 10px 10px 10px 27px;
+    text-decoration: none;
+    font-size: 13px;
+    color: rgb(120, 120, 120);
+}
+.menu-primary a.active {
+    color: rgb(0, 134, 223);
+    border-bottom: 3px solid rgb(0, 134, 223);
+}
+.menu-primary a[href*="all"] {
+    background: url(../img/all-icon.jpg);
+    background-repeat: no-repeat;
+    background-size: 18px;
+    background-position: left;
 }
 
 .more {
     display: inline-block;
     margin-left: 15px;
+    font-size: 13px;
+    color: rgb(120, 120, 120);
 }
 .more ul {
     display: none;
@@ -102,6 +128,8 @@ header {
 .search-options {
     float: right;
     display: flex;
+    font-size: 13px;
+    color: rgb(120, 120, 120);
 }
 .settings,
 .tools {
