@@ -11,3 +11,16 @@ btnMore.addEventListener('click', function() {
         moreSubmenu.style.display = 'none';
     }
 });
+
+/* Submenu (Settings) */
+
+const btnSettings = document.querySelector(".settings");
+const settingsSubmenu = document.querySelector(".settings ul");
+
+btnSettings.addEventListener('click', function() {
+    if(settingsSubmenu.style.display == 'none' || settingsSubmenu.style.display == '') {
+        settingsSubmenu.style.display = 'block';
+    } else {
+        settingsSubmenu.style.display = 'none';
+    }
+});

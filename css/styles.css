@@ -182,7 +182,41 @@ header {
 .tools {
     padding: 10px;
 }
+.settings {
+    position: relative;
+    display: block;
+    cursor: pointer;
+}
 .settings ul {
     display: none;
-    vertical-align: middle;
+    position: absolute;
+    margin-top: 10px;
+    width: 150px;
+    padding: 3px 0;
+    left: 0;
+    box-shadow: 0 0 5px rgb(180, 180, 180);
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+}
+.settings a {
+    display: block;
+    padding: 8px;
+    font-size: 14px;
+    color: rgb(80, 80, 80);
+    text-decoration: none;
+}
+.settings a:hover {
+    background-color: rgb(230, 230, 230);
+}
+
+/* 
+    Fim do Header
+
+    Início do conteúdo principal
+
+*/ 
+
+.about-tools {
+    height: 100px;
+    color: red;
 }
